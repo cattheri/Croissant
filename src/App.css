@@ -1,0 +1,369 @@
+
+/* Общие настройки */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #493326;
+  background-color: #fffaf3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Шапка */
+
+.header {
+  background-color: #f2dfc5;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #754b32;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #b77b45;
+}
+
+/* Главная страница */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 70px 8%;
+  gap: 40px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.subtitle {
+  color: #b47a43;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #70472f;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero img {
+  width: 45%;
+  max-width: 550px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Кнопки */
+
+.button,
+.small-button {
+  display: inline-block;
+  background-color: #9b633d;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.button:hover,
+.small-button:hover {
+  background-color: #70472f;
+}
+
+/* Преимущества */
+
+.advantages {
+  text-align: center;
+  padding: 50px 7%;
+  background-color: #f7ead9;
+}
+
+.advantages h2 {
+  font-size: 32px;
+}
+
+.advantage-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.advantage-list div {
+  max-width: 250px;
+}
+
+.advantage-list span,
+.delivery-item span {
+  font-size: 40px;
+}
+
+/* Общие страницы */
+
+.page {
+  min-height: 65vh;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 38px;
+  color: #70472f;
+}
+
+.page-description {
+  color: #876c59;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Каталог */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(80, 50, 20, 0.1);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 18px;
+}
+
+.product-info h3 {
+  font-size: 19px;
+}
+
+.product-info p {
+  color: #8b7565;
+  min-height: 40px;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-bottom strong {
+  font-size: 20px;
+  color: #9b633d;
+}
+
+.small-button {
+  padding: 9px 14px;
+  font-size: 14px;
+}
+
+/* О нас */
+
+.about {
+  max-width: 950px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.about img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.about p {
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Доставка */
+
+.delivery-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+.delivery-item {
+  background: #f7ead9;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+}
+
+.delivery-item h2 {
+  font-size: 21px;
+}
+
+.delivery-item p {
+  line-height: 1.6;
+}
+
+/* Контакты */
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.contact-info,
+.contact-form {
+  width: 45%;
+  max-width: 450px;
+}
+
+.contact-info p {
+  line-height: 2;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #d8c1a8;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .button {
+  width: fit-content;
+}
+
+/* Подвал */
+
+.footer {
+  background-color: #70472f;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 50px;
+}
+
+.footer h3 {
+  font-size: 23px;
+}
+
+/* Адаптация под телефон */
+
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .advantage-list,
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .page {
+    padding: 35px 5%;
+  }
+}
